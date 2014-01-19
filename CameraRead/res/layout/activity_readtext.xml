@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+  <FrameLayout
+    android:id="@+id/camera_preview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" />
+  
+  <ImageView
+    android:id="@+id/image_preview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" />
+  
+  <FrameLayout
+    android:id="@+id/drawing_surface"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+  </FrameLayout>
+  
+  <ImageButton
+      android:id="@+id/button_capture"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center|right"
+      android:orientation="vertical"
+      android:rotation="270"
+      android:src="@android:drawable/ic_menu_camera" />
+  
+  <ImageButton
+    android:id="@+id/button_cancel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:rotation="270"
+    android:layout_gravity="top|right"
+    android:src="@android:drawable/ic_delete" />
+
+  <ImageButton
+    android:id="@+id/button_ok"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:rotation="270"
+    android:layout_gravity="bottom|right"
+    android:src="@android:drawable/ic_menu_search" />
+  
+  <TextView
+    android:id="@+id/field"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    
+    android:layout_gravity="bottom"
+    android:orientation="horizontal"
+    
+    android:text="Text: " 
+    android:textSize="30dp" 
+    android:textColor="#FFFACD" />
+
+</FrameLayout>
+
+
